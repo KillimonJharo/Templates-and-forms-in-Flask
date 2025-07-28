@@ -1,0 +1,317 @@
+/* Глобальные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+/* Шапка */
+header {
+    background-color: rgba(21, 14, 58, 0.8);
+    color: #00ffcc;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 255, 204, 0.2);
+    border-bottom: 1px solid #00ffcc;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: text-shadow 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+/* Основной контент */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: rgba(16, 12, 41, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+    border: 1px solid #2a2a72;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #00ffcc;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #6a11cb;
+    padding-bottom: 0.5rem;
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.3);
+}
+
+h3 {
+    color: #8a2be2;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #c0c0c0;
+}
+
+/* Секция "Обо мне" */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6a11cb;
+    box-shadow: 0 0 30px #8a2be2;
+}
+
+.highlight {
+    color: #00ffcc;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #8a2be2;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #00ffcc;
+    background: rgba(106, 17, 203, 0.1);
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Секция навыков */
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#skills li {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 1.2rem;
+    border-radius: 8px;
+    list-style-position: inside;
+    border: 1px solid #4e54c8;
+    transition: transform 0.3s;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+}
+
+/* Таблица прогресса */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    border: 1px solid #4e54c8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #4e54c8;
+}
+
+th {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(30, 26, 64, 0.5);
+}
+
+tr:hover {
+    background-color: rgba(78, 84, 200, 0.2);
+}
+
+/* Секция криптомечты */
+#crypto-vision .vision-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.vision-item {
+    background: rgba(26, 26, 46, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #8a2be2;
+    transition: all 0.3s;
+}
+
+.vision-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(21, 14, 58, 0.9);
+    color: #00ffcc;
+    margin-top: 2rem;
+    border-top: 1px solid #6a11cb;
+}
+
+footer a {
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: #ff5555;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Стили для формы дневника */
+.notes-form {
+    background: rgba(26, 26, 46, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(16, 12, 41, 0.7);
+    border: 1px solid #6a11cb;
+    border-radius: 5px;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-add {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+}
+
+/* Стили для списка записей */
+.notes-list {
+    background: rgba(26, 26, 46, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.note {
+    background: rgba(16, 12, 41, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8a2be2;
+    transition: transform 0.3s;
+}
+
+.note:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+}
+
+.note h3 {
+    color: #00ffcc;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #4e54c8;
+    padding-bottom: 0.5rem;
+}
+
+.note p {
+    color: #c0c0c0;
+    line-height: 1.6;
+}

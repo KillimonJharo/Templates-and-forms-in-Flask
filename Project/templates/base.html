@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Криптопуть Рауля{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{% block header %}От нуля до криптобарона{% endblock %}</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Главная</a></li>
+                <li><a href="{{ url_for('notes') }}">Дневник программиста</a></li>
+                {% block additional_nav %}{% endblock %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2025 Путь криптобарона | Контакты для инвесторов: <a href="Telegramm">@TheDonCryptoBaron</a></p>
+        <p class="disclaimer">⚠️ Предупреждение: Этот блог - часть учебного проекта</p>
+    </footer>
+</body>
+</html>
